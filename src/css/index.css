@@ -25,15 +25,20 @@
 
 @layer variables {
 	:root {
-		--color-text: #0000;
+		--color-text: #000000;
 		--color-text-opposite: #fff;
 		--color-background: #fff;
 		--color-text-error: #D00000;
 		--color-success: #B6EEE5;
 		--max-width: 375px;
 		--border-radius: 1.5rem;
+		--border-radius-s: 0.5rem;
 		--color-border: #E8E8E8;
 		--font-heading-h1: 600 2rem "Space Grotesk", serif;
-		--font-body-18-regular: 400 1.125rem "Space Grotesk", serif
+		--font-heading-h4: 600 1.25rem "Space Grotesk", serif;
+		--font-body-18-regular: 400 1.125rem "Space Grotesk", serif;
+
+		--spacing45: 1.25rem;
+		--spacing6: 1.5rem;
 	}
 }

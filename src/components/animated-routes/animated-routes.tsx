@@ -4,17 +4,16 @@ import {
 	AnimatePresence
 } from "framer-motion"
 
-const OrdersPage = lazy(() => import('../../pages/orders/orders.tsx'))
-const OrderDetailsPage = lazy(() => import('../../pages/order-details/order-datails.tsx'))
-
+const Orders = lazy(() => import('../../pages/orders/orders.tsx'))
+const OrderDetails = lazy(() => import('../../pages/order-details/order-details.tsx'))
 
 const AnimatedRoutes: React.FC = () => {
 	const location = useLocation()
 	return (
 		<AnimatePresence mode="wait">
 			<Routes location={location} key={location.pathname}>
-				<Route path='/' element={<OrdersPage />} />
-				<Route path='/order/:orderId' element={<OrderDetailsPage />} />
+				<Route path='/' element={<Orders />} />
+				<Route path='/order/:orderId' element={<OrderDetails />} />
 			</Routes>
 		</AnimatePresence>
 	)

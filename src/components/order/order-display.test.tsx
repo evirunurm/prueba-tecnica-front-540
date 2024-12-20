@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const renderComponent = (props = {}) => {
 	const defaultProps = {
 		id: '1',
-		merchantName: 'Test Merchant',
+		merchantName: 'Amazon',
 		merchantLogo: 'logo.png',
 		merchantImage: 'image.png',
 		date: '2023-10-01',
@@ -26,12 +26,12 @@ const renderComponent = (props = {}) => {
 describe('OrderDisplay', () => {
 	it('renders merchant name', () => {
 		renderComponent();
-		expect(screen.getByText('Test Merchant')).toBeInTheDocument();
+		expect(screen.getByText('Amazon')).toBeInTheDocument();
 	});
 
-	it('renders merchant logo', () => {
+	it('renders merchant logo with alternative text', () => {
 		renderComponent();
-		expect(screen.getByAltText('Test Merchant logo')).toBeInTheDocument();
+		expect(screen.getByAltText('Amazon logo')).toBeInTheDocument();
 	});
 
 	it('renders date', () => {
@@ -61,7 +61,7 @@ describe('OrderDisplay', () => {
 
 	it('navigates to the correct route when clicked', () => {
 		renderComponent();
-		const linkElement = screen.getByRole('link', { name: /Test Merchant/i });
+		const linkElement = screen.getByRole('link', { name: /Amazon/i });
 		fireEvent.click(linkElement);
 		expect(window.location.pathname).toBe('/order/1');
 	});

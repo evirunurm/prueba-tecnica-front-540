@@ -1,3 +1,5 @@
+import { OrderStatus } from "./order-status";
+
 export interface Order {
 	id: string;
 	merchantImage: string;
@@ -6,7 +8,7 @@ export interface Order {
 	date: string;
 	nextDueAmount: number;
 	nextDueDate: string;
-	status: string;
+	status: OrderStatus;
 	reference: string;
 	price: number;
 	numberOfArticles: number;

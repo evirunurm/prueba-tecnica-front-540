@@ -31,12 +31,69 @@ We expect you to:
 - We expect the demo to work minimum on iOS 17 and Android 14.
 - Your experience level will be taken into consideration when evaluating.
 
-## graphql-request
+## Documentation
 
-GraphQL Request is a library that doesn't require you to set up a client or a Provider component. It is essentially a function that just accepts an endpoint and a query. Very similar to an HTTP client, you just have to pass in those two values and you get back your data.
+### How to run the project
 
+Clone the repository:
+
+``` cmd
+git clone <repository-url>
+cd <repository-directory>
+```
+
+Install the dependencies and run the API located in `./api`
+
+``` cmd
+cd ./api
+npm install
+npm start
+```
+
+Install project dependencies:
+
+``` cmd
+cd ./prueba-tecnica-540
+npm install
+```
+
+Start the development server:
+
+``` cmd
+npm run dev
+```
+
+### Run tests
+
+``` cmd
+npm run test
+```
+
+### Libraries used
+
+- **Core**:
+  - React: Main library.
+  - React Router: Routing.
+  - Framer Motion: Animations and transitions between routes.
+  - Classnames: Conditionally joining class names.
+- **Data fetching**:
+  - React Query: Data fetching and state management.
+  - GraphQL Request: Making GraphQL queries and mutations.
+- **Testing**
+  - Testing Library: For testing React components.
+  - Vitest: For running tests.
+  - Jest DOM: Test the state of the DOM.
 
 ## Future changes
 
-- Isolate the function renderComponent that renders the component inside the correct Route used in unit testing into a separate file for reutilization.
--  
+- Arreglar la carga de imágenes de fondo.
+- Añadir documentación sobre la arquitectura del proyecto.
+- Incrementar la cobertura de tests.
+- Añadir tests de accesibilidad con la librería AXE.
+- Añadir documentación de testing: Dónde se deberían ubicar los tests, de qué manera se realizan, etc.
+- Componetizar más los elementos, evitando así la repetición del CSS:
+- Utilizar CSS Modules en vez de clases planas.
+- Explorar otra forma de generar consultas de GraphQL, sin que sean cadenas de texto.
+- Añadir documentación sobre la API y las comunicación con el backend.
+- Implementar iconos.
+- Mejorar la animación de cambio de ruta.

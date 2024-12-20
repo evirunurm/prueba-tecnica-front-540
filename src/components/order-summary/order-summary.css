@@ -1,0 +1,13 @@
+@layer components.order-summary {
+	.order-summary {
+		background: color-mix(in srgb, var(--color-background) 67%, transparent);
+		color: var(--color-text);
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0.5rem;
+		border-radius: 1.5rem;
+		font-size: 1rem;
+	}
+
+}

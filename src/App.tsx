@@ -1,9 +1,10 @@
 import AnimatedRoutes from './components/animated-routes/animated-routes'
+import './App.css'
 
 function App() {
 
 	return (
-		<div>
+		<div className='app'>
 			<AnimatedRoutes />
 		</div>
 	)
