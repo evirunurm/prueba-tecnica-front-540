@@ -98,7 +98,7 @@ npm run test
 - Incrementar la cobertura de tests.
 - Añadir tests de accesibilidad con la librería AXE.
 - Añadir documentación de testing: Dónde se deberían ubicar los tests, de qué manera se realizan, etc.
-- Componetizar más los elementos, evitando así la repetición del CSS:
+- Componetizar más los elementos, evitando así la repetición del CSS y favorecienco la reutilización.
 - Utilizar CSS Modules en vez de clases planas.
 - Explorar otra forma de generar consultas de GraphQL, sin que sean cadenas de texto.
 - Añadir documentación sobre la API y las comunicación con el backend.
