@@ -1,0 +1,15 @@
+@layer pages.order {
+
+	.orders__title {
+		font: var(--font-heading-h1);
+		padding: 1rem 1.5rem 1rem 1.5rem;
+	}
+
+	.orders__list {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 0 1.5rem 3rem 1.5rem;
+	}
+
+}

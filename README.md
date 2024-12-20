@@ -30,3 +30,13 @@ We expect you to:
 - As it is a React Native position we expect to use react-native CLI or Expo.
 - We expect the demo to work minimum on iOS 17 and Android 14.
 - Your experience level will be taken into consideration when evaluating.
+
+## graphql-request
+
+GraphQL Request is a library that doesn't require you to set up a client or a Provider component. It is essentially a function that just accepts an endpoint and a query. Very similar to an HTTP client, you just have to pass in those two values and you get back your data.
+
+
+## Future changes
+
+- Isolate the function renderComponent that renders the component inside the correct Route used in unit testing into a separate file for reutilization.
+-  

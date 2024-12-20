@@ -1,10 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion'
 
-const Order: React.FC = () => {
+const OrderDetails: React.FC = () => {
 	return (
-		<article>
+		<motion.main
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			transition={{ duration: 0.5 }}
+		>
 			<div>
-
 				<h2>Tienda</h2>
 				<p>12 nov 2024</p>
 				<p>3 artículos</p>
@@ -16,8 +21,8 @@ const Order: React.FC = () => {
 				<p>Cobro de: <span>454,80 €</span></p>
 			</div>
 
-		</article>
+		</motion.main>
 	);
 };
 
-export default Order;
+export default OrderDetails;
