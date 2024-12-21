@@ -35,11 +35,11 @@ We expect you to:
 
 ### How to run the project
 
-Clone the repository:
+Clone the API repository:
 
 ``` cmd
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/sequra/frontend-mobile-challenge
+cd frontend-mobile-challenge
 ```
 
 Install the dependencies and run the API located in `./api`
@@ -48,6 +48,13 @@ Install the dependencies and run the API located in `./api`
 cd ./api
 npm install
 npm start
+```
+
+Clone the project repository:
+
+``` cmd
+git clone <repository-url>
+cd prueba-tecnica-front-540
 ```
 
 Install project dependencies:
