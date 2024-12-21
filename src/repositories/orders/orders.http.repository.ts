@@ -1,8 +1,8 @@
 
 import request, { gql } from 'graphql-request';
 import { IOrdersRepository } from './orders.repository';
-import OrdersResponse from '../../types/orders/orders-response';
-import OrderByIdResponse from '../../types/orders/orderById-response';
+import OrdersResponse from '@domain/orders/orders-response';
+import OrderByIdResponse from '@domain/orders/orderById-response';
 
 export const OrdersHttpRepository = (): IOrdersRepository => {
 	return {

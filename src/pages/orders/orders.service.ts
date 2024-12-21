@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
-import OrdersResponse from "../../types/orders/orders-response";
-import { IOrdersRepository } from "../../repositories/orders/orders.repository";
+import OrdersResponse from "@domain/orders/orders-response";
+import { IOrdersRepository } from "@repositories/orders/orders.repository";
 
 export const GetOrders = (
 	repository: IOrdersRepository

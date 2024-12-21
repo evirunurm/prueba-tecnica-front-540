@@ -1,7 +1,7 @@
 import React from 'react';
 import './order-date.css';
 import classNames from 'classnames';
-import { OrderStatus } from '../../types/orders/order-status';
+import { OrderStatus } from '@domain/orders/order-status';
 
 type Props = {
 	status: string;

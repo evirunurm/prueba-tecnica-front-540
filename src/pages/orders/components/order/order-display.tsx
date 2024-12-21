@@ -51,7 +51,6 @@ const OrderDisplay: React.FC<Props> = (
 							alt={`${merchantName} logo`}
 						/>
 					</div>
-
 				</section>
 				<section className='order-display__order-info'>
 					<div>

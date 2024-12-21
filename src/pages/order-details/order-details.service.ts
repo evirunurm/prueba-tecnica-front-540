@@ -1,7 +1,7 @@
 import { useMutation, useQuery } from "react-query";
-import { IOrdersRepository } from "../../repositories/orders/orders.repository";
-import OrderByIdResponse from "../../types/orders/orderById-response";
-import PayOrderResponse from "../../types/orders/payOrder-response";
+import { IOrdersRepository } from "@repositories/orders/orders.repository";
+import OrderByIdResponse from "@domain/orders/orderById-response";
+import PayOrderResponse from "@domain/orders/payOrder-response";
 
 export const GetOrderById = (
 	repository: IOrdersRepository,

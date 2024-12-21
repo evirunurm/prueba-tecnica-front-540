@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import OrderDate from './order-date';
 import { describe, it, expect } from 'vitest';
-import { OrderStatus } from '../../types/orders/order-status';
+import { OrderStatus } from '@domain/orders/order-status';
 
 describe('OrderDate', () => {
 	it('renders completed message when nextDueDate is not provided', () => {

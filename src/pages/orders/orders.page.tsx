@@ -1,10 +1,10 @@
 import React from 'react';
-import OrderDisplay from '../../components/order/order-display';
-import { Order } from '../../types/orders/order';
+import OrderDisplay from './components/order/order-display';
+import { Order } from '@domain/orders/order';
 import './orders.css';
 import { motion } from 'framer-motion'
 import { GetOrders } from './orders.service';
-import { IOrdersRepository } from '../../repositories/orders/orders.repository';
+import { IOrdersRepository } from '@repositories/orders/orders.repository';
 
 type OrdersPageProps = {
 	repository: IOrdersRepository;

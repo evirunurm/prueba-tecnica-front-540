@@ -86,14 +86,20 @@ npm run test
 
 ## Future changes
 
-- Arreglar la carga de imágenes de fondo.
-- Añadir documentación sobre la arquitectura del proyecto.
-- Incrementar la cobertura de tests.
-- Añadir tests de accesibilidad con la librería AXE.
-- Añadir documentación de testing: Dónde se deberían ubicar los tests, de qué manera se realizan, etc.
-- Componetizar más los elementos, evitando así la repetición del CSS:
-- Utilizar CSS Modules en vez de clases planas.
-- Explorar otra forma de generar consultas de GraphQL, sin que sean cadenas de texto.
-- Añadir documentación sobre la API y las comunicación con el backend.
-- Implementar iconos.
-- Mejorar la animación de cambio de ruta.
+- Funcionbalidad:
+  - Arreglar la carga de imágenes de fondo.
+  - Implementar iconos.
+  - Mejorar la animación de cambio de ruta.
+- Testing:
+  - Incrementar la cobertura de tests.
+  - Añadir tests de accesibilidad (por ej. librería AXE)
+  - Hacer testing del componente AnimatedRoutes.
+- Arquitectura/Código:
+  - Componetizar más los elementos, emejorando así la reutilización de componentes y evitando código duplicado.
+  - Realizar una gestión más globar del estado de cada ventana (Contexto).
+  - Utilizar CSS Modules en vez de clases planas.
+  - Explorar otra forma de generar consultas de GraphQL, sin que sean cadenas de texto.
+- Documentación:
+  - Añadir documentación sobre la API y las comunicación con el backend.
+  - Añadir documentación sobre la arquitectura del proyecto.
+  - Añadir documentación de testing: Dónde se deberían ubicar los tests, de qué manera se realizan, etc.

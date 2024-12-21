@@ -23,6 +23,24 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedSideEffectImports": true,
+		"baseUrl": "./src",
+		"paths": {
+			"@components/*": [
+				"components/*"
+			],
+			"@pages/*": [
+				"pages/*"
+			],
+			"@repositories/*": [
+				"repositories/*"
+			],
+			"@domain/*": [
+				"domain/*"
+			],
+			"@assets/*": [
+				"assets/*"
+			]
+		}
 	},
 	"include": [
 		"src"

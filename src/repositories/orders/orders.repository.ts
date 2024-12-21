@@ -1,6 +1,6 @@
-import PayOrderResponse from "../../types/orders/payOrder-response";
-import OrderByIdResponse from "../../types/orders/orderById-response";
-import OrdersResponse from "../../types/orders/orders-response";
+import PayOrderResponse from "@domain/orders/payOrder-response";
+import OrderByIdResponse from "@domain/orders/orderById-response";
+import OrdersResponse from "@domain/orders/orders-response";
 
 export type IOrdersRepository = {
 	getOrders(): Promise<OrdersResponse>;

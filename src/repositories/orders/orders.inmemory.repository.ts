@@ -1,6 +1,6 @@
 
-import { OrderStatus } from '../../types/orders/order-status';
-import OrdersResponse from '../../types/orders/orders-response';
+import { OrderStatus } from '@domain/orders/order-status';
+import OrdersResponse from '@domain/orders/orders-response';
 import { IOrdersRepository } from './orders.repository';
 
 export const OrdersInMemoryRepository = (): IOrdersRepository => {
@@ -10,20 +10,19 @@ export const OrdersInMemoryRepository = (): IOrdersRepository => {
 				orders: []
 			};
 		},
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		getOrderById: async (id: string) => {
 			return {
 				orderById: {
-					id: '1',
+					id: id,
 					merchantName: 'Merchant Name',
 					merchantImage: '',
 					merchantLogo: '',
 					date: '2021-09-01',
 					status: OrderStatus.Pending,
-					nextDueAmount: 0,
+					nextDueAmount: 10,
 					numberOfArticles: 0,
 					nextDueDate: '2021-09-01',
-					price: 0,
+					price: 10,
 					reference: '',
 					shippedArticles: 0
 				}

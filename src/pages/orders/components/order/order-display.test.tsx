@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import OrderDisplay from './order-display';
 import { describe, it, expect } from 'vitest';
@@ -25,43 +25,43 @@ const renderComponent = (props = {}) => {
 
 describe('OrderDisplay', () => {
 	it('renders merchant name', () => {
-		renderComponent();
-		expect(screen.getByText('Amazon')).toBeInTheDocument();
+		const { getByText } = renderComponent();
+		expect(getByText('Amazon')).toBeInTheDocument();
 	});
 
 	it('renders merchant logo with alternative text', () => {
-		renderComponent();
-		expect(screen.getByAltText('Amazon logo')).toBeInTheDocument();
+		const { getByAltText } = renderComponent();
+		expect(getByAltText('Amazon logo')).toBeInTheDocument();
 	});
 
 	it('renders date', () => {
-		renderComponent();
-		expect(screen.getByText('2023-10-01')).toBeInTheDocument();
+		const { getByText } = renderComponent();
+		expect(getByText('2023-10-01')).toBeInTheDocument();
 	});
 
 	it('renders number of items', () => {
-		renderComponent();
-		expect(screen.getByText('5 artículos')).toBeInTheDocument();
+		const { getByText } = renderComponent();
+		expect(getByText('5 artículos')).toBeInTheDocument();
 	});
 
 	it('renders status', () => {
-		renderComponent();
-		expect(screen.getByText('Pending')).toBeInTheDocument();
+		const { getByText } = renderComponent();
+		expect(getByText('Pending')).toBeInTheDocument();
 	});
 
 	it('renders next due date if provided', () => {
-		renderComponent({ nextDueDate: '2023-11-01' });
-		expect(screen.getByText('2023-11-01')).toBeInTheDocument();
+		const { getByText } = renderComponent({ nextDueDate: '2023-11-01' });
+		expect(getByText('2023-11-01')).toBeInTheDocument();
 	});
 
 	it('renders next due amount if provided', () => {
-		renderComponent({ nextDueAmount: 100 });
-		expect(screen.getByText('Cobro de:')).toBeInTheDocument();
+		const { getByText } = renderComponent({ nextDueAmount: 100 });
+		expect(getByText('Cobro de:')).toBeInTheDocument();
 	});
 
 	it('navigates to the correct route when clicked', () => {
-		renderComponent();
-		const linkElement = screen.getByRole('link', { name: /Amazon/i });
+		const { getByRole } = renderComponent();
+		const linkElement = getByRole('link', { name: /Amazon/i });
 		fireEvent.click(linkElement);
 		expect(window.location.pathname).toBe('/order/1');
 	});

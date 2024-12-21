@@ -4,8 +4,8 @@ import {
 	AnimatePresence
 } from "framer-motion"
 
-const Orders = lazy(() => import('../../pages/orders/orders.tsx'))
-const OrderDetails = lazy(() => import('../../pages/order-details/order-details.tsx'))
+const Orders = lazy(() => import('@pages/orders/orders.tsx'))
+const OrderDetails = lazy(() => import('@pages/order-details/order-details.tsx'))
 
 const AnimatedRoutes: React.FC = () => {
 	const location = useLocation()
